@@ -1,0 +1,6 @@
+[submodule "kb-crawler"]
+	path = kb-crawler
+	url = https://github.com/cvicentiu/kb-crawler.git
+[submodule "mariadb-for-universities"]
+	path = mariadb-for-universities
+	url = https://github.com/mariadb/mariadb-for-universities.git
