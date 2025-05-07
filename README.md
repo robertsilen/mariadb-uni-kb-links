@@ -18,7 +18,7 @@ With 01_embed_kb_2_db.py:
 3. Create a vector for each page (or the beginning of the page up to e.g. 2000 chars) with an embedding model. 
 4. Insert each page into a  MariaDB table with fields: title, url, content, embedding
 
-With 02_prepare_uni_and_search.py:
+With 02_rag_search.py:
 
 5. Iterate through MariaDB Uni material, and for each Uni "slide", create a vector with an embedding model. Search for closest KB vector, and document the 3 closest KB pages: title, url and vector distance.
 6. Output in an xlsx for review and further consideration.
@@ -52,3 +52,4 @@ docker exec -i mdb mariadb -uroot -pPassword123! < init.sql
 
 To check that the docker image is running use ```docker ps```. To access the database: ```docker exec -it mdb mariadb -uroot -pPassword123!```.
 
+x
